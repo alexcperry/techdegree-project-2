@@ -6,14 +6,15 @@
 }
 
 body {
-  background-color: #eee;
+  background-color: #f5f5f5;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   letter-spacing: 0.1em;
   line-height: 1.3em;
 }
 
 p,
-figcaption h2 {
+figcaption h2,
+footer p {
   color: #666;
 }
 
@@ -155,10 +156,121 @@ header {
   color: #222;
 }
 
+.hidden-first {
+  display: none;
+}
+
 @media (min-width : 768px) {
+
+  /* --- General Styles---*/
+
+  .clearfix {
+    content : "";
+    display : table;
+    clear: both;
+  }
+
+  p {
+    line-height: 1.4em;
+  }
+
+  /* --- Header Layout---*/
+
+  .main-nav {
+    width: 300px;
+    margin: auto;
+    padding-bottom: 10px;
+  }
+
+  .main-nav li {
+    float: left;
+    width: 33%;
+    background-color: #f5f5f5;
+  }
+
+  /* --- Intro Layout---*/
+
+  #intro-image {
+    float: right;
+    width: 40%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .intro-paragraph {
+    float: left;
+    width: 60%;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+  }
+
+    /* --- Portfolio Layout---*/
+
+    .portfolio-card {
+      float: left;
+      width:  50%;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .portfolio-card img {
+      margin-bottom: 30px;
+    }
+
+    .portfolio-card figcaption {
+      width: 80%;
+      margin: auto;
+    }
+
+    /* --- Footer Layout---*/
+
+    .footer-wrapper {
+      width: 80%;
+      margin: auto;
+    }
+
+    .bottom-wrapper {
+      width: 90%;
+      margin: auto;
+    }
+
+    .footer-name {
+      margin-left: 30px;
+    }
+
+    .hidden-second {
+      display: none;
+    }
+
+    .hidden-first {
+      display: block;
+      float: right;
+      margin-top: 24px;
+      margin-right: 30px;
+      margin-bottom: 32px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #222;
+      
+    }
+    
+    .back-to-top:visited {
+      font-weight: bold;
+      color: #222;
+    }
 
 }
 
-@media (min-wdith : 1024px) {
-  
+@media (min-width : 1024px) {
+
+  /* --- Portfolio Layout---*/
+
+  .portfolio-card {
+    float: left;
+    width:  33%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
 }
