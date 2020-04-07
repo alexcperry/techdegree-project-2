@@ -1,15 +1,21 @@
 
 /* --- Overall Styles ---*/
 
+@font-face {
+  font-family: "Arimo";
+  src: url('../fonts/arimo-regular.ttf') format('.ttf');
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
   background-color: #f5f5f5;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   letter-spacing: 0.1em;
   line-height: 1.3em;
+  font-family: 'Arimo', 'Franklin Gothic Medium', 'Arial Narrow', Arial, 
+  sans-serif;
 }
 
 p,
@@ -23,6 +29,10 @@ header h1,
 h3 {
   color: #222;
   text-transform: uppercase;
+}
+
+.page-title {
+  letter-spacing: 0.01em;
 }
 
 .main-nav li a {
